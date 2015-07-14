@@ -1,1 +1,3 @@
+Author: Sharif Hanif
+
 This folder contains java scripts for data collection into the pipeline and preprocessing for data mining.
