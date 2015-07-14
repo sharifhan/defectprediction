@@ -1,0 +1,16 @@
+Text mining - steps for data prepocessing and feature selection
+
+1. Split the randomized raw data in 50/50 ratio [train, test]
+2. Prepare train data for text-mining [lower, stopwords, remove-numbers-punctuation-whitespace, stemming]
+3. Classify [NB, DT] with train dataset
+	a. Apply test dataset
+4. Feature selection
+	a. Filter
+	b. Wrapper
+5. Classify with Filter [best classifier from 3]
+	a. repeat without the first feature in the rank
+	b. repeat without the first two features in the rank
+	c. decide if the top two features make any difference in classification accuracy
+6. Classify with Wrapper [best classifier from 3]
+	a. repeat for the alternative wrapper subset
+7. Conclude which Feature-Classifier combination has the highest accuracy

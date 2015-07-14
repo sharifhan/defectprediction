@@ -1,0 +1,38 @@
+NB-> TPR=0.77, TNR=0.70 <- best accuracy
+DT-> TPR=0.76, TNR=0.66
+
+Relation:     textmining-train
+Instances:    14751
+Attributes:   2
+
+NaiveBayes
+Correctly Classified Instances       10990               74.5489 %
+Incorrectly Classified Instances      3752               25.4511 %
+=== Detailed Accuracy By Class ===
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.774     0.292      0.773     0.774     0.774      0.812    0
+                 0.708     0.226      0.71      0.708     0.709      0.812    1
+Weighted Avg.    0.745     0.263      0.745     0.745     0.745      0.812
+
+=== Confusion Matrix ===
+    a    b   <-- classified as
+ 6415 1869 |    a = 0
+ 1883 4575 |    b = 1
+
+
+ 
+DecisionTree
+Correctly Classified Instances       10575               71.7338 %
+Incorrectly Classified Instances      4167               28.2662 %
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.764     0.342      0.741     0.764     0.752      0.765    0
+                 0.658     0.236      0.684     0.658     0.671      0.765    1
+Weighted Avg.    0.717     0.296      0.716     0.717     0.717      0.765
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 6325 1959 |    a = 0
+ 2208 4250 |    b = 1

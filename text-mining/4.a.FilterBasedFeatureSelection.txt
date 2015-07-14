@@ -1,0 +1,48 @@
+Conclusion: Filter based feature selection didn't improve accuracy
+Orifinal: TPR=0.80, TNR=0.76
+Filtered: TPR=0.78, TNR=0.74
+
+Search:weka.attributeSelection.Ranker -T 0.0 -N -1
+Instances:    14751
+Attributes:   1284
+
+Evaluator:    weka.attributeSelection.ChiSquaredAttributeEval 
+
+Top 15 attributes
+
+14 		add
+925 	support
+339 	fails
+310 	error
+274 	doesnt
+1282 	wrong
+723 	provide
+1075 	broken
+337 	fail
+207 	correctly
+592 	missing
+429 	implement
+618 	nice
+355 	fix
+704 	problem
+
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+
+Top 15 attributes
+
+14 add
+925 support
+339 fails
+310 error
+1282 wrong
+274 doesnt
+1075 broken
+723 provide
+337 fail
+207 correctly
+429 implement
+592 missing
+618 nice
+704 problem
+355 fix
