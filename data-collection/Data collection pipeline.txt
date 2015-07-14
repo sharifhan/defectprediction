@@ -1,1 +1,1 @@
-This folder contains java scripts for data collection into the pipeline.
+This folder contains java scripts for data collection into the pipeline and preprocessing for data mining.
