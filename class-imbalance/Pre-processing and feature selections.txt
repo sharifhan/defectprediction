@@ -1,0 +1,20 @@
+Imbalance eclipse defects dataset - steps for data prepocessing and feature selection
+
+1. Split the randomized raw data in 50/50 ratio [train, test]
+2. Imbalance handling for test data: [stemming for text-mining] 
+	a. ROS
+	b. RUS
+	c. SMOTE (requires randomization)
+3. Classify [Regression, NB, DT, RForest, SVM]
+	a. For all these datasets train, 2.a.ROS, 2.b.RUS, 2.c.SMOTE
+	b. Apply test dataset
+4. Feature selection
+	a. Filter
+	b. Wrapper
+5. Classify with Filter [best classifier from 3.b]
+	a. repeat without the first feature in the rank
+	b. repeat without the first two features in the rank
+	c. decide if the top two features make any difference in classification accuracy
+6. Classify with Wrapper [best classifier from 3.b]
+	a. repeat for the alternative wrapper subset
+7. Conclude which Feature-Classifier combination has the highest accuracy

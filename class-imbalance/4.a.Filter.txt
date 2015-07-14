@@ -1,0 +1,25 @@
+Conclusion: Filter based feature selection didn't improve performance
+
+TPR: original=0.70, without_NLOC_HVOC=0.73
+TNR: original=0.72, without_NLOC_HVOC=0.66
+
+Chi-squared Ranking Filter:
+Ranked attributes:
+134.6327   11 NLOC
+126.6634    5 HVOC
+124.06     25 NOPR
+122.9947    4 HLTH
+121.8001   21 HVOL
+Selected attributes: 11,5,25,4,21,6,26,3,23,15,22,1,20,16,8,24,9,12,7,19,27,10,2,18 : 24
+
+
+
+Information Gain Ranking Filter
+Ranked attributes:
+ 0.2368   11 NLOC
+ 0.2229    6 HEFF
+ 0.2225    5 HVOC
+ 0.2194   26 NEXP
+ 0.2167   23 VREF
+Selected attributes: 11,6,5,26,23,25,4,3,21,15,1,22,20,16,24,8,9,7,12,19,27,10,2,18 : 24
+

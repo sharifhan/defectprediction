@@ -1,0 +1,31 @@
+Conclusion: 2.b.RUS showed the best performance
+
+2.b.RUS
+TPR=0.77
+TNR=0.79
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.768     0.207      0.989     0.768     0.864      0.847    0
+                 0.793     0.232      0.122     0.793     0.211      0.847    1
+Weighted Avg.    0.769     0.208      0.955     0.769     0.839      0.847
+=== Confusion Matrix ===
+    a    b   <-- classified as
+ 4102 1242 |    a = 0
+   45  172 |    b = 1
+
+2.c.SMOTE
+TPR=0.98
+TNR=0.30 <- poor
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.978     0.7        0.972     0.978     0.975      0.868    0
+                 0.3       0.022      0.359     0.3       0.327      0.868    1
+Weighted Avg.    0.952     0.674      0.948     0.952     0.95       0.868
+=== Confusion Matrix ===
+    a    b   <-- classified as
+ 5228  116 |    a = 0
+  152   65 |    b = 1

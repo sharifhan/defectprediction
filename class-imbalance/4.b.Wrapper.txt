@@ -1,0 +1,24 @@
+Conclusion: Wrapper based feature selection didn't improve performance
+
+TPR: original=0.70, without_NOCL_HEFF_HBUG=0.71
+TNR: original=0.72, without_NOCL_HEFF_HBUG=0.69
+
+Relation: 2.b.RUS
+
+ClassifierSubsetEval J48
+Search Method: BestFirst -D 2 -N 5
+Selected attributes: 2,3,6,7,8,9,10,13,14,17,23,25,26,27 : 14
+	NOCL NOS HEFF HBUG CREF XMET LMET NOA MOD EXCT VREF NOPR NEXP LOOP
+
+Search Method: GreedyStepwise -B -C -T 0.0 -N -1
+Selected attributes: 2,6,7,9,10,11,12,13,14,16,19,20,23,27 : 14
+	NOCL HEFF HBUG XMET LMET NLOC NOC NOA MOD VDEC CAST TDN VREF LOOP
+
+WrapperSubsetEval J48
+Search Method: BestFirst -D 1 -N 5
+Selected attributes: 1,7,11,13,17,19,20 : 7
+	COMP HBUG NLOC NOA EXCT CAST TDN
+
+Search Method: GreedyStepwise -B -C -T 0.0 -N -1
+Selected attributes: 1,3,4,5,6,7,8,10,11,14,15,17,18,20,23,25,26,27 : 18
+	COMP NOS HLTH HVOC HEFF HBUG CREF LMET NLOC MOD HDIF EXCT EXCR TDN VREF NOPR NEXP LOOP
